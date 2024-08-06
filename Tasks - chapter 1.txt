@@ -1,0 +1,81 @@
+-- View data in Customer table
+-- View data in Product table
+-- Insert new grape flavor product into table
+-- Sort Orders table
+-- Find null values in Customer table
+-- Remove null values from customer table
+-- Create new month columns
+-- Insert new customer into Customer table
+
+
+Solution : 
+
+-- Insert new grape flavor product into table
+INSERT INTO Product (
+    ProductID,
+    ProductCode,
+    ProductName,
+    Size,
+    Variety,
+    Price,
+    Status
+  )
+VALUES (
+    17,
+    'MWPRA20',
+    'Mineral Water',
+    20,
+    'Grape',
+    '1.79',
+    'ACTIVE'
+
+-- Sort Orders table
+SELECT * FROM Orders
+ORDER BY CreationDate DESC;
+
+-- Find null values in Customer table
+SELECT * 
+FROM Customer
+WHERE FirstName IS NULL OR
+LastName IS NULL OR
+Email IS NULL OR 
+Phone IS NULL;
+
+-- Remove null values from customer table
+SELECT FirstName,
+LastName,
+Email,
+Phone 
+FROM Customer
+WHERE Email IS NOT NULL AND 
+Phone IS NOT NULL;
+
+-- Create new month columns
+SELECT *,
+MONTH(CreationDate) as MonthNumber,
+MONTHNAME(CreationDate) as MonthName  
+FROM Orders;
+
+-- Insert new customer into Customer table
+INSERT INTO Customer (
+    CustomerID,
+    FirstName,
+    LastName,
+    Email,
+    Phone,
+    Address,
+    City,
+    State,
+    Zipcode
+  )
+VALUES (
+    1100,
+    'Jane',
+    'Paterson',
+    'jane.paterson@gmail.com',
+    '(912)459-2910',
+    '4029 Park Street',
+    'Kansas City',
+    'MO',
+    '64161'
+  );

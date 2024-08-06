@@ -1,0 +1,20 @@
+1. go to the Git hub repository 
+
+https://github.com/LinkedInLearning/complete-your-first-project-in-SQL-1283446
+
+2. go to <> code button > Local > Download ZIP
+
+3.  go to <> code button > Codespaces > press '+' button > it will create a codespace. 
+
+Inside Codespace we need to close it properly once we open it, 
+go to the lowest bar and in the left corner click on the green tab >
+you will be DIRECTED in terminal BAR on top > 
+then select "stop the server" option.
+
+
+4. H+ Sport : go to hplussport.com in your browser > 
+get a thorough idea of the products variety available in website.
+
+Eg, Task 1 : Company want to add a new product( blueberry flavored mineral water bottle)
+in their product line and your task is to add product in the database.
+
